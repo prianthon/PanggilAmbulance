@@ -1,53 +1,66 @@
 <!DOCTYPE html>
-<!--
-    Copyright (c) 2012-2014 Adobe Systems Incorporated. All rights reserved.
-
-    Licensed to the Apache Software Foundation (ASF) under one
-    or more contributor license agreements.  See the NOTICE file
-    distributed with this work for additional information
-    regarding copyright ownership.  The ASF licenses this file
-    to you under the Apache License, Version 2.0 (the
-    "License"); you may not use this file except in compliance
-    with the License.  You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing,
-    software distributed under the License is distributed on an
-    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-     KIND, either express or implied.  See the License for the
-    specific language governing permissions and limitations
-    under the License.
--->
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="format-detection" content="telephone=no" />
-        <meta name="msapplication-tap-highlight" content="no" />
-        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-        <link rel="stylesheet" type="text/css" href="css/index.css" />
-        <!--bootstrap-->
-        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-        <!--bootstrap-->
-        <title>Taxi Purwokerto</title>
-    </head>
-    <body>
-        <div class="app">
-            <h1>Taksi Purwokerto</h1>
-            <a href="tel:+62281642440" class="btn btn-info" role="button">Kobata</a>
-            <a href="tel:+622817668400" class="btn btn-info" role="button">Satria Mas</a>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
-            </div>
-        </div>
-        <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
-        <script type="text/javascript">
-            app.initialize();
-        </script>
-    </body>
+<head>
+  <title>My Page</title>
+  <meta name="viewport" content="initial-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta charset="utf-8" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="msapplication-tap-highlight" content="no" />
+  <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+  <link rel="stylesheet" href="jqm/jquery.mobile-1.3.1.css" />
+  <script src="jqm/jquery-1.9.1.min.js"></script>
+  <script src="jqm/jquery.mobile-1.3.1.min.js"></script>
+</head>
+<body>
+
+<div data-role="page">
+
+  <div data-role="header" data-position="fixed">
+    <!--<a href="#" data-role="button">Back</a>-->
+    <h1>Taxi Purwokerto</h1>
+  </div><!-- /header -->
+
+  <div data-role="content">
+
+      <h1>H1 Heading</h1>
+      <p>This is a paragraph that contains <strong>strong</strong>, <em>emphasized</em> and <a href="index.html">linked</a> text. Here is more text so you can see how HTML markup works in content. Here is more text so you can see how HTML markup works in content.</p>
+
+    <div data-role="collapsible" data-collapsed="true" data-theme="a">
+      <h3>Kobata</h3>
+      <p><a href="tel:+62281642440" data-role="button">Panggil</a></p>
+    </div><!-- /collapsible -->
+    <div data-role="collapsible" data-collapsed="true" data-theme="a">
+      <h3>Satria Mas</h3>
+      <p><a href="tel:+622817668400" data-role="button">Panggil</a></p>
+    </div><!-- /collapsible -->
+    <div class="app">
+    <div id="deviceready" class="blink">
+        <p class="event listening">Connecting to Device</p>
+        <p class="event received">Device is Ready</p>
+    </div>
+    </div>
+  </div><!-- /content -->
+
+  <div data-role="footer" data-position="fixed">
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#" data-icon="check" class="ui-btn-active ui-state-persist">Taxi</a></li>
+        <li><a href="#" data-icon="refresh">Ngetem</a></li>
+        <li><a href="#" data-icon="gear">Kode</a></li>
+      </ul>
+    </div>
+  </div>
+
+</div><!-- /page -->
+
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript">
+    app.initialize();
+</script>
+
+</body>
 </html>
