@@ -1,7 +1,7 @@
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="id.web.prianthon.taxi" version="1.0.0">
-  <name>Taxi Purwokerto</name>
-  <description>Hello World sample application that responds to the deviceready event.</description>
-  <author href="http://phonegap.com" email="support@phonegap.com">PhoneGap Team</author>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="id.web.prianthon.ambulance" version="1.0.0">
+  <name>Si Bulan</name>
+  <description>Si Bulan adalah Mobil Siaga Ambulance Gratis.</description>
+  <author href="http://prianthon.github.io" email="prianthonsubardio@gmail.com">Zona Bombong</author>
   <content src="index.html"/>
   <preference name="permissions" value="none"/>
   <preference name="orientation" value="default"/>
