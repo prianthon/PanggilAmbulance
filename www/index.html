@@ -21,6 +21,17 @@
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
+  <style>
+  .jumbotronx {
+    width: 100%;
+    height: 220px;
+    background-image: url("img/sibulan.jpg");
+    background-size: 100% 100%;
+    background-color: #9E2417; /* Orange */
+    color: #ffffff;
+  }
+  </style>
+
   <!--bs-->
 </head>
 <body>
@@ -77,14 +88,19 @@
 <div data-role="page" id="zonabombong">
 
 	<div data-role="header" data-position="fixed" data-tap-toggle="false">
-		<h1>ZONA BOMBONG</h1>
+		<h1><strong>ZONA BOMBONG</strong></h1>
 	</div><!-- /header -->
 
+  <div class="jumbotronx text-center">
+    <!--<h1>Company</h1>
+    <p>We specialize in blablabla</p>-->
+  </div>
+
 	<div data-role="content">
-		<h1>Zona Bombong Ambulan</h1>
+		<!--<h1>Zona Bombong Ambulan</h1>-->
 		<p>Standby di Masjid Karangkobar Purwokerto, khusus ambulan pasien</p>
 
-		<a href="tel:+6282324777701" data-role="button" data-rel="external">klik panggil</a>
+		<a href="tel:+6282324777701" data-role="button" data-rel="external">PANGGIL</a>
 		<div data-role="collapsible" data-theme="a" data-content-theme="d">
 			<h3>Fasilitas Ambulan</h3>
       <ul>
@@ -102,7 +118,7 @@
   <div data-role="footer" data-position="fixed" data-tap-toggle="false">
     <div data-role="navbar">
       <ul>
-        <li><a href="#panggil" data-transition="flip" data-prefetch data-icon="star" class="ui-btn-active ui-state-persist">KEMBALI</a></li>
+        <li><a href="#panggil" data-transition="flip" data-prefetch data-icon="back" class="ui-btn-active ui-state-persist">KEMBALI</a></li>
       </ul>
     </div>
   </div><!-- /footer -->
