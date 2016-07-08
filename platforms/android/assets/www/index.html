@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>My App</title>
+    <!-- Path to Framework7 Library CSS-->
+    <link rel="stylesheet" href="css/framework7.material.min.css">
+    <link rel="stylesheet" href="css/framework7.material.colors.min.css">
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="css/my-app.css">
+    <!--font-awesome-->
+    <script src="https://use.fontawesome.com/e7374f668c.js"></script>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="lib/Swiper/dist/css/swiper.min.css">
+    <style>
+    .swiper-container {
+        width: 100%;
+        height: 40%;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        background-position: center;
+        background-size: cover;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+    </style>
+  </head>
+  <body class="theme-red">
+    <!-- Status bar overlay for fullscreen mode-->
+    <div class="statusbar-overlay"></div>
+    <!-- Panels overlay-->
+    <div class="panel-overlay"></div>
+    <!--view panel kiri-->
+    <div class="panel panel-left panel-cover">
+      <div class="view navbar-fixed">
+        <div class="pages">
+          <div data-page="panel-left" class="page">
+            <div class="navbar">
+              <div class="navbar-inner">
+                <div class="center">Selamat datang</div>
+              </div>
+            </div>
+            <div class="page-content">
+              <div class="content-block">
+                <!--<p>This is a side panel/drawer. You can close it by clicking outsite or on this link: <a href="#" class="close-panel">close me</a>. You can put here anything, even another isolated view like in <a href="#" data-panel="right" class="open-panel">Right Panel</a></p>-->
+                <p>Jejaring Si Bulan adalah Jaringan Siaga Ambulan Gratis</p>
+              </div>
+              <!--<div class="content-block-title">Daftar Isi</div>-->
+              <div class="list-block">
+                <ul>
+                  <li><a href="pengantar.html" class="item-link close-panel">
+                      <div class="item-content">
+                        <div class="item-media"><i class="icon fa fa-history"></i></div>
+                        <div class="item-inner">
+                          <div class="item-title">Riwayat</div>
+                          <div class="item-after"><span class="badge bg-green">BARU</span></div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="perubahaniklim.html" class="item-link close-panel">
+                      <div class="item-content">
+                        <div class="item-media"><i class="icon fa fa-star"></i></div>
+                        <div class="item-inner">
+                          <div class="item-title">Favorit</div>
+                          <div class="item-after"><span class="badge bg-grey">BETA</span></div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="peranan-indonesia.html" class="item-link close-panel">
+                      <div class="item-content">
+                        <div class="item-media"><i class="icon fa fa-calendar-check-o"></i></div>
+                        <div class="item-inner">
+                          <div class="item-title">Dijadwalkan</div>
+                          <div class="item-after"><span class="badge bg-grey">BETA</span></div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="program-karbon.html" class="item-link close-panel">
+                      <div class="item-content">
+                        <div class="item-media"><i class="icon fa fa-bell"></i></div>
+                        <div class="item-inner">
+                          <div class="item-title">Pemberitahuan</div>
+                          <div class="item-after"><span class="badge bg-grey">BETA</span></div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="pelibatan-masyarakat.html" class="item-link close-panel">
+                      <div class="item-content">
+                        <div class="item-media"><i class="icon fa fa-gift"></i></div>
+                        <div class="item-inner">
+                          <div class="item-title">Beritahu Teman</div>
+                          <div class="item-after"><span class="badge bg-green">BARU</span></div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="disclosure.html" class="item-link close-panel">
+                      <div class="item-content">
+                        <div class="item-media"><i class="icon fa fa-wheelchair"></i></div>
+                        <div class="item-inner">
+                          <div class="item-title">Bantuan</div>
+                          <div class="item-after"><span class="badge bg-green">BARU</span></div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="define.html" class="item-link close-panel">
+                      <div class="item-content">
+                        <div class="item-media"><i class="icon fa fa-ambulance"></i></div>
+                        <div class="item-inner">
+                          <div class="item-title">Bergabung</div>
+                          <div class="item-after"><span class="badge bg-green">BARU</span></div>
+                        </div>
+                      </div></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--view panel kiri-->
+    <!--view panel kanan-->
+    <div class="panel panel-right panel-reveal">
+      <div class="view view-right">
+        <div class="pages navbar-fixed">
+          <div data-page="panel-right1" class="page">
+            <div class="navbar">
+              <div class="navbar-inner">
+                <div class="center">Panel Kanan</div>
+              </div>
+            </div>
+            <div class="page-content">
+              <div class="content-block">
+                <p>This is a right side panel. You can close it by clicking outsite or on this link: <a href="#" class="close-panel">close me</a>. You can put here anything, even another isolated view, try it: </p>
+              </div>
+              <div class="list-block">
+                <ul>
+                  <li><a href="panel-right2.html" class="item-link">
+                      <div class="item-content">
+                        <div class="item-inner">
+                          <div class="item-title">Right panel page 2</div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="panel-right3.html" class="item-link">
+                      <div class="item-content">
+                        <div class="item-inner">
+                          <div class="item-title">Right panel page 3</div>
+                        </div>
+                      </div></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--view panel kanan-->
+    <!--view tengah beranda-->
+    <div class="views">
+      <div class="view view-main">
+        <div class="pages navbar-fixed">
+          <div data-page="index" class="page">
+            <div class="navbar">
+              <div class="navbar-inner">
+                <div class="left">
+                  <a href="#" class="open-panel link icon-only">
+                    <i class="icon icon-bars"></i>
+                  </a>
+                </div>
+                <div class="center">Jejaring Si Bulan</div>
+                <div class="right">
+                  <a href="#" class="open-panel link icon-only" data-panel="right">
+                    <i class="icon fa fa-cog fa-spin fa-1x fa-fw"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="page-content">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide" style="background-image:url(img/sw/sw1.jpg)"></div>
+                  <div class="swiper-slide" style="background-image:url(img/sw/sw2.jpg)"></div>
+                  <div class="swiper-slide" style="background-image:url(img/sw/sw3.jpg)"></div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next swiper-button-white"></div>
+                <div class="swiper-button-prev swiper-button-white"></div>
+              </div>
+              <div class="content-block-title" align="center"><strong>Daftar Antar - Jemput</strong></div>
+                <div class="card">
+                  <div class="card-content">
+                    <div class="card-content-inner">This is simple card with plain text. But card could contain its own header, footer, list view, image, and any elements inside.</div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-content">
+                    <div class="card-content-inner">This is simple card with plain text. But card could contain its own header, footer, list view, image, and any elements inside.</div>
+                  </div>
+                </div>
+              <div>
+                <a href="tel:+6282324777701" class="floating-button color-red external">
+                  <i class="icon fa fa-phone fa-2x"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--view tengah beranda-->
+    <!-- cordova -->
+    <script type="text/javascript" src="cordova.js"></script>
+    <!-- Path to Framework7 Library JS-->
+    <script type="text/javascript" src="js/framework7.min.js"></script>
+    <!-- Path to your app js-->
+    <script type="text/javascript" src="js/my-app.js"></script>
+    <!-- Swiper JS -->
+    <script src="lib/Swiper/dist/js/swiper.min.js"></script>
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        spaceBetween: 30,
+        effect: 'fade',
+        autoplay: 2500,
+        autoplayDisableOnInteraction: false
+    });
+    </script>
+  </body>
+</html>
