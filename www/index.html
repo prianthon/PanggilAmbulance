@@ -1,557 +1,246 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Si Bulan</title>
-  <meta name="viewport" content="initial-scale=1.0">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <!--bawaan-->
-  <meta charset="utf-8" />
-  <meta name="format-detection" content="telephone=no" />
-  <meta name="msapplication-tap-highlight" content="no" />
-  <!--bawaan-->
-  <!--graphite tema-->
-  <link rel="stylesheet" href="jqm/jquery.mobile-1.3.1.css" />
-  <script src="jqm/jquery-1.9.1.min.js"></script>
-  <script src="jqm/jquery.mobile-1.3.1.min.js"></script>
-  <!--graphite tema-->
-  <!--bs-->
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>My App</title>
+    <!-- Path to Framework7 Library CSS-->
+    <link rel="stylesheet" href="css/framework7.material.min.css">
+    <link rel="stylesheet" href="css/framework7.material.colors.min.css">
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="css/my-app.css">
+    <!--font-awesome-->
+    <script src="https://use.fontawesome.com/e7374f668c.js"></script>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="lib/Swiper/dist/css/swiper.min.css">
+    <style>
+    .swiper-container {
+        width: 100%;
+        height: 40%;
+    }
 
-  <style>
-  .jumbotronz {
-    width: 100%;
-    height: 220px;
-    background-image: url("img/sibulan.jpg");
-    background-size: 100% 100%;
-    background-color: #9E2417; /* Orange */
-    color: #ffffff;
-  }
-
-  .jumbotronb {
-    width: 100%;
-    height: 230px;
-    background-image: url("img/baris.JPG");
-    background-size: 100% 100%;
-    background-color: #9E2417; /* Orange */
-    color: #ffffff;
-  }
-
-  .jumbotronsr {
-    width: 100%;
-    height: 230px;
-    background-image: url("img/blmadafoto.jpg");
-    background-size: 100% 100%;
-    background-color: #9E2417; /* Orange */
-    color: #ffffff;
-  }
-  </style>
-
-  <!--bs-->
-</head>
-<body>
-<!--hal panggil-->
-<div data-role="page" id="panggil">
-
-  <div data-role="header" data-position="fixed" data-tap-toggle="false"><!-- /header -->
-    <!--<a href="https://twitter.com/prianthon" data-role="button" data-icon="grid">GITHUB</a>-->
-    <h1><strong>Si Bulan</strong></h1>
-  </div><!-- /header -->
-
-  <div class="jumbotronb text-center">
-    <!--<h1>Company</h1>
-    <p>We specialize in blablabla</p>-->
-  </div>
-
-  <div data-role="content">
-
-      <!--<h2>.</h2>-->
-      <!--<div align="center">
-      <img class="img-responsive" src="jqm/images/icon-sibulan.png" alt="Ambulance Gratis" align="middle">-->
-      <!--</div>-->
-        <ul data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="Cari Nama Ambulan">
-          <li data-role="list-divider">Daftar Ambulan</li>
-		    	<li><a href="#zonabombong">ZONA BOMBONG</a></li>
-          <li><a href="#sedekahrombongan">SEDEKAH ROMBONGAN</a></li>
-          <li><a href="#dompetdhuafa">DOMPET DHUAFA</a></li>
-          <li><a href="#mafaza">MAFAZA</a></li>
-		    	<li><a href="#sambellayah">SAMBEL LAYAH</a></li>
-          <li><a href="#lazismubanyumas">LAZISMU</a></li>
-          <li><a href="#geraksedekahcilacap">GERAK SEDEKAH CILACAP</a></li>
-          <li><a href="#pringsewu">PRINGSEWU</a></li>
-		    	<li><a href="#pdip">PDI-P</a></li>
-		    	<li><a href="#gerindra">GERINDRA</a></li>
-        </ul>
-    <!--<div data-role="collapsible" data-collapsed="true" data-theme="a">
-      <h3>Mobil Siaga Ambulance</h3>
-      <p><a href="tel:+6282324777701" data-role="button">Panggil</a></p>
-    </div>--><!-- /collapsible -->
-    <!-- /collapsible -->
-    <!--<div class="app">
-    <div id="deviceready" class="blink">
-        <p class="event listening">Connecting to Device</p>
-        <p class="event received">Device is Ready</p>
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        background-position: center;
+        background-size: cover;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+    </style>
+  </head>
+  <body class="theme-red">
+    <!-- Status bar overlay for fullscreen mode-->
+    <div class="statusbar-overlay"></div>
+    <!-- Panels overlay-->
+    <div class="panel-overlay"></div>
+    <!--view panel kiri-->
+    <div class="panel panel-left panel-cover">
+      <div class="view navbar-fixed">
+        <div class="pages">
+          <div data-page="panel-left" class="page">
+            <div class="navbar">
+              <div class="navbar-inner">
+                <div class="center">Selamat datang</div>
+              </div>
+            </div>
+            <div class="page-content">
+              <div class="content-block">
+                <!--<p>This is a side panel/drawer. You can close it by clicking outsite or on this link: <a href="#" class="close-panel">close me</a>. You can put here anything, even another isolated view like in <a href="#" data-panel="right" class="open-panel">Right Panel</a></p>-->
+                <p>Jejaring Si Bulan adalah Jaringan Siaga Ambulan Gratis</p>
+              </div>
+              <!--<div class="content-block-title">Daftar Isi</div>-->
+              <div class="list-block">
+                <ul>
+                  <li><a href="pengantar.html" class="item-link close-panel">
+                      <div class="item-content">
+                        <div class="item-media"><i class="icon fa fa-history"></i></div>
+                        <div class="item-inner">
+                          <div class="item-title">Riwayat</div>
+                          <div class="item-after"><span class="badge bg-green">BARU</span></div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="perubahaniklim.html" class="item-link close-panel">
+                      <div class="item-content">
+                        <div class="item-media"><i class="icon fa fa-star"></i></div>
+                        <div class="item-inner">
+                          <div class="item-title">Favorit</div>
+                          <div class="item-after"><span class="badge bg-grey">BETA</span></div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="peranan-indonesia.html" class="item-link close-panel">
+                      <div class="item-content">
+                        <div class="item-media"><i class="icon fa fa-calendar-check-o"></i></div>
+                        <div class="item-inner">
+                          <div class="item-title">Dijadwalkan</div>
+                          <div class="item-after"><span class="badge bg-grey">BETA</span></div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="program-karbon.html" class="item-link close-panel">
+                      <div class="item-content">
+                        <div class="item-media"><i class="icon fa fa-bell"></i></div>
+                        <div class="item-inner">
+                          <div class="item-title">Pemberitahuan</div>
+                          <div class="item-after"><span class="badge bg-grey">BETA</span></div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="pelibatan-masyarakat.html" class="item-link close-panel">
+                      <div class="item-content">
+                        <div class="item-media"><i class="icon fa fa-gift"></i></div>
+                        <div class="item-inner">
+                          <div class="item-title">Beritahu Teman</div>
+                          <div class="item-after"><span class="badge bg-green">BARU</span></div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="disclosure.html" class="item-link close-panel">
+                      <div class="item-content">
+                        <div class="item-media"><i class="icon fa fa-wheelchair"></i></div>
+                        <div class="item-inner">
+                          <div class="item-title">Bantuan</div>
+                          <div class="item-after"><span class="badge bg-green">BARU</span></div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="define.html" class="item-link close-panel">
+                      <div class="item-content">
+                        <div class="item-media"><i class="icon fa fa-ambulance"></i></div>
+                        <div class="item-inner">
+                          <div class="item-title">Bergabung</div>
+                          <div class="item-after"><span class="badge bg-green">BARU</span></div>
+                        </div>
+                      </div></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>-->
-  </div><!-- /content -->
-
-  <div data-role="footer" data-position="fixed" data-tap-toggle="false">
-    <div data-role="navbar">
-      <ul>
-        <li><a href="#panggil" data-transition="flip" data-prefetch data-icon="bars" class="ui-btn-active ui-state-persist">DAFTAR</a></li>
-        <li><a href="#pangkalan" data-transition="flip" data-prefetch data-icon="info">INFORMASI</a></li>
-      </ul>
+    <!--view panel kiri-->
+    <!--view panel kanan-->
+    <div class="panel panel-right panel-reveal">
+      <div class="view view-right">
+        <div class="pages navbar-fixed">
+          <div data-page="panel-right1" class="page">
+            <div class="navbar">
+              <div class="navbar-inner">
+                <div class="center">Panel Kanan</div>
+              </div>
+            </div>
+            <div class="page-content">
+              <div class="content-block">
+                <p>This is a right side panel. You can close it by clicking outsite or on this link: <a href="#" class="close-panel">close me</a>. You can put here anything, even another isolated view, try it: </p>
+              </div>
+              <div class="list-block">
+                <ul>
+                  <li><a href="panel-right2.html" class="item-link">
+                      <div class="item-content">
+                        <div class="item-inner">
+                          <div class="item-title">Right panel page 2</div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="panel-right3.html" class="item-link">
+                      <div class="item-content">
+                        <div class="item-inner">
+                          <div class="item-title">Right panel page 3</div>
+                        </div>
+                      </div></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-</div><!-- /page -->
-<!--hal panggil-->
-<div data-role="page" id="zonabombong">
-
-	<div data-role="header" data-position="fixed" data-tap-toggle="false">
-		<h1><strong>ZONA BOMBONG</strong></h1>
-	</div><!-- /header -->
-
-  <div class="jumbotronz text-center">
-    <!--<h1>Company</h1>
-    <p>We specialize in blablabla</p>-->
-  </div>
-
-	<div data-role="content">
-		<!--<h1>Zona Bombong Ambulan</h1>-->
-		<p><b>S</b>tandby di Masjid Karangkobar Purwokerto, khusus ambulan pasien.</p>
-
-		<a href="tel:+6282324777701" data-role="button" data-rel="external">PANGGIL</a>
-		<div data-role="collapsible" data-collapsed="false" data-theme="a" data-content-theme="d">
-			<h3>Fasilitas Ambulan</h3>
-      <ul>
-        <li>Tandu</li>
-        <li>Strechter</li>
-        <li>Tabung Oksigen</li>
-        <li>Jenis Mobil Luxio</li>
-        <li>24 Jam</li>
-        <li>Area: Purbalingga, Cilacap, Purwokerto, Banjarnegara</li>
-      </ul>
-		</div>
-
-	</div><!-- /content -->
-
-  <div data-role="footer" data-position="fixed" data-tap-toggle="false">
-    <div data-role="navbar">
-      <ul>
-        <li><a href="#panggil" data-transition="flip" data-prefetch data-icon="back" class="ui-btn-active ui-state-persist">KEMBALI</a></li>
-      </ul>
+    <!--view panel kanan-->
+    <!--view tengah beranda-->
+    <div class="views">
+      <div class="view view-main">
+        <div class="pages navbar-fixed">
+          <div data-page="index" class="page">
+            <div class="navbar">
+              <div class="navbar-inner">
+                <div class="left">
+                  <a href="#" class="open-panel link icon-only">
+                    <i class="icon icon-bars"></i>
+                  </a>
+                </div>
+                <div class="center">Jejaring Si Bulan</div>
+                <div class="right">
+                  <a href="#" class="open-panel link icon-only" data-panel="right">
+                    <i class="icon fa fa-cog fa-spin fa-1x fa-fw"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="page-content">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide" style="background-image:url(img/sw/sw1.jpg)"></div>
+                  <div class="swiper-slide" style="background-image:url(img/sw/sw2.jpg)"></div>
+                  <div class="swiper-slide" style="background-image:url(img/sw/sw3.jpg)"></div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next swiper-button-white"></div>
+                <div class="swiper-button-prev swiper-button-white"></div>
+              </div>
+              <div class="content-block-title" align="center"><strong>Daftar Antar - Jemput</strong></div>
+                <div class="card">
+                  <div class="card-content">
+                    <div class="card-content-inner">This is simple card with plain text. But card could contain its own header, footer, list view, image, and any elements inside.</div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-content">
+                    <div class="card-content-inner">This is simple card with plain text. But card could contain its own header, footer, list view, image, and any elements inside.</div>
+                  </div>
+                </div>
+              <div>
+                <a href="tel:+6282324777701" class="floating-button color-red external">
+                  <i class="icon fa fa-phone fa-2x"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div><!-- /footer -->
-</div><!-- /page zonabombong -->
-<div data-role="page" id="sambellayah">
-
-	<div data-role="header" data-position="fixed" data-tap-toggle="false">
-		<h1><b>SAMBEL LAYAH</b></h1>
-	</div><!-- /header -->
-
-  <div class="jumbotronsr text-center">
-    <!--<h1>Company</h1>
-    <p>We specialize in blablabla</p>-->
-  </div>
-
-	<div data-role="content">
-		<p><b>S</b>tandby di RM Sambel Layah, Djago Jowo, Bebek Goreng H.Slamet, Gule Kepala Ikan</p>
-
-		<a href="tel:+6281329680444" data-role="button" data-rel="external">CALL CENTER</a>
-    <a href="tel:+6285329790183" data-role="button" data-rel="external">PANGGIL</a>
-		<div data-role="collapsible" data-theme="a" data-content-theme="d">
-			<h3>Fasilitas Ambulan</h3>
-      <ul>
-        <li>Tandu</li>
-        <li>Strechter</li>
-        <li>Tabung Oksigen</li>
-        <li>Jenis Mobil Gran Max 2013</li>
-        <li>24 Jam</li>
-        <li>2 Jenis Ambulan: Pasien dan Jenazah</li>
-        <li>Area: Purbalingga, Cilacap, Purwokerto, Banjarnegara</li>
-      </ul>
-		</div>
-
-	</div><!-- /content -->
-
-  <div data-role="footer" data-position="fixed" data-tap-toggle="false">
-    <div data-role="navbar">
-      <ul>
-        <li><a href="#panggil" data-transition="flip" data-prefetch data-icon="back" class="ui-btn-active ui-state-persist">KEMBALI</a></li>
-      </ul>
-    </div>
-  </div><!-- /footer -->
-</div><!-- /page sambellayah -->
-<div data-role="page" id="mafaza">
-
-	<div data-role="header" data-position="fixed" data-tap-toggle="false">
-		<h1><b>MAFAZA</b></h1>
-	</div><!-- /header -->
-
-  <div class="jumbotronsr text-center">
-    <!--<h1>Company</h1>
-    <p>We specialize in blablabla</p>-->
-  </div>
-
-	<div data-role="content">
-		<p><b>J</b>ln Madrani No 1, Grendeng, Purwokerto Utara</p>
-
-		<a href="tel:+6281327489425" data-role="button" data-rel="external">klik panggil</a>
-		<div data-role="collapsible" data-collapsed="false" data-theme="a" data-content-theme="d">
-			<h3>Fasilitas Ambulan</h3>
-      <ul>
-        <li>P3K</li>
-        <li>Keranda</li>
-        <li>Tabung Oksigen</li>
-        <li>Pemandian Jenazah</li>
-        <li>Jenis Mobil L300 Mitsubishi</li>
-        <li>24 Jam</li>
-        <li>Pasien dan Jenazah</li>
-        <li>Area: Jawa</li>
-      </ul>
-		</div>
-
-	</div><!-- /content -->
-
-  <div data-role="footer" data-position="fixed" data-tap-toggle="false">
-    <div data-role="navbar">
-      <ul>
-        <li><a href="#panggil" data-transition="flip" data-prefetch data-icon="back" class="ui-btn-active ui-state-persist">KEMBALI</a></li>
-      </ul>
-    </div>
-  </div><!-- /footer -->
-</div><!-- /page sambellayah -->
-
-<div data-role="page" id="lazismubanyumas">
-
-	<div data-role="header" data-position="fixed" data-tap-toggle="false">
-		<h1><b>LAZISMU</b></h1>
-	</div><!-- /header -->
-
-  <div class="jumbotronsr text-center">
-    <!--<h1>Company</h1>
-    <p>We specialize in blablabla</p>-->
-  </div>
-
-	<div data-role="content">
-		<p><b>B</b>elum ada alamat.</p>
-
-    <div align="center" data-role="controlgroup" data-type="horizontal">
-		  <a href="tel:+628992916171" data-role="button" data-rel="external">FANY</a>
-      <a href="tel:+6285647771424" data-role="button" data-rel="external">TEGAR</a>
-      <a href="tel:+6281393698455" data-role="button" data-rel="external">FAJAR</a>
-    </div>
-		<div data-role="collapsible" data-collapsed="false" data-theme="a" data-content-theme="d">
-			<h3>Fasilitas Ambulan</h3>
-      <ul>
-        <li>Stretcher</li>
-        <li>Keranda</li>
-        <li>Tabung Oksigen</li>
-        <li>Pemandian Jenazah</li>
-        <li>Jenis Mobil APV</li>
-        <li>24 Jam</li>
-        <li>Pasien dan Jenazah</li>
-        <li>Area: Banyumas</li>
-      </ul>
-		</div>
-
-	</div><!-- /content -->
-
-  <div data-role="footer" data-position="fixed" data-tap-toggle="false">
-    <div data-role="navbar">
-      <ul>
-        <li><a href="#panggil" data-transition="flip" data-prefetch data-icon="back" class="ui-btn-active ui-state-persist">KEMBALI</a></li>
-      </ul>
-    </div>
-  </div><!-- /footer -->
-</div><!-- /page sambellayah -->
-
-<div data-role="page" id="geraksedekahcilacap">
-
-	<div data-role="header" data-position="fixed" data-tap-toggle="false">
-		<h1><b>GERAK SEDEKAH CILACAP</b></h1>
-	</div><!-- /header -->
-
-  <div class="jumbotronsr text-center">
-    <!--<h1>Company</h1>
-    <p>We specialize in blablabla</p>-->
-  </div>
-
-	<div data-role="content">
-		<p><b>B</b>elum ada alamat.</p>
-
-		  <a href="tel:+6285701223333" data-role="button" data-rel="external">CALL CENTER</a>
-      <a href="tel:+6285726421211" data-role="button" data-rel="external">SIGIT</a>
-		<div data-role="collapsible" data-collapsed="false" data-theme="a" data-content-theme="d">
-			<h3>Fasilitas Ambulan</h3>
-      <ul>
-        <li>Stretcher</li>
-        <li>Tabung Oksigen</li>
-        <li>Jenis Mobil Grandmax 2015</li>
-        <li>24 Jam</li>
-        <li>Pasien</li>
-        <li>Area: Banyumas Raya</li>
-      </ul>
-		</div>
-
-	</div><!-- /content -->
-
-  <div data-role="footer" data-position="fixed" data-tap-toggle="false">
-    <div data-role="navbar">
-      <ul>
-        <li><a href="#panggil" data-transition="flip" data-prefetch data-icon="back" class="ui-btn-active ui-state-persist">KEMBALI</a></li>
-      </ul>
-    </div>
-  </div><!-- /footer -->
-</div><!-- /page sambellayah -->
-
-<div data-role="page" id="pringsewu">
-
-	<div data-role="header" data-position="fixed" data-tap-toggle="false">
-		<h1><b>PRINGSEWU</b></h1>
-	</div><!-- /header -->
-
-  <div class="jumbotronsr text-center">
-    <!--<h1>Company</h1>
-    <p>We specialize in blablabla</p>-->
-  </div>
-
-	<div data-role="content">
-		<p><b>B</b>elum ada alamat.</p>
-
-		  <a href="tel:+6285776333117" data-role="button" data-rel="external">CALL CENTER A</a>
-      <a href="tel:+6285870124814" data-role="button" data-rel="external">CALL CENTER B</a>
-		<div data-role="collapsible" data-collapsed="false" data-theme="a" data-content-theme="d">
-			<h3>Fasilitas Ambulan</h3>
-      <ul>
-        <li>Stretcher</li>
-        <li>Tabung Oksigen</li>
-        <li>Jenis Mobil Grandmax 2010</li>
-        <li>24 Jam</li>
-        <li>Pasien</li>
-        <li>Area: Banyumas Raya</li>
-      </ul>
-		</div>
-
-	</div><!-- /content -->
-
-  <div data-role="footer" data-position="fixed" data-tap-toggle="false">
-    <div data-role="navbar">
-      <ul>
-        <li><a href="#panggil" data-transition="flip" data-prefetch data-icon="back" class="ui-btn-active ui-state-persist">KEMBALI</a></li>
-      </ul>
-    </div>
-  </div><!-- /footer -->
-</div><!-- /page sambellayah -->
-
-<div data-role="page" id="sedekahrombongan">
-
-	<div data-role="header" data-position="fixed" data-tap-toggle="false">
-		<h1><b>SEDEKAH ROMBONGAN</b></h1>
-	</div><!-- /header -->
-
-  <div class="jumbotronsr text-center">
-    <!--<h1>Company</h1>
-    <p>We specialize in blablabla</p>-->
-  </div>
-
-	<div data-role="content">
-		<p><b>MTSR</b> Mobil Tanggap Sedekah Rombongan, standby di penatusan/berkoh rs.margono</p>
-
-    <a href="tel:+6281513911911" data-role="button" data-rel="external">HOTLINE</a>
-    <div align="center" data-role="controlgroup" data-type="horizontal">
-      <a href="tel:+6285641157009" data-role="button" data-rel="external">PANGGIL DRIVER A</a>
-      <a href="tel:+6281327300029" data-role="button" data-rel="external">PANGGIL DRIVER B</a>
-    </div>
-		<div data-role="collapsible" data-theme="a" data-content-theme="d">
-			<h3>Fasilitas Ambulan</h3>
-      <ul>
-        <li>Strecher</li>
-        <li>Wastafel</li>
-        <li>Tabung Oksigen</li>
-        <li>Rak lemari</li>
-        <li>Jenis Mobil Luxio 2011</li>
-        <li>24 Jam</li>
-        <li>Pasien</li>
-        <li>Area: Jawa</li>
-      </ul>
-		</div>
-    <div data-role="collapsible" data-theme="a" data-content-theme="d">
-			<h3>Rumah Singgah</h3>
-      <p>Jln Penatusan Gang I RT1/2, Purwokerto Timur<br/>bisa untuk inap 5 pasien<br/>email : purwokertosr@gmail.com</p>
-		</div>
-
-	</div><!-- /content -->
-
-  <div data-role="footer" data-position="fixed" data-tap-toggle="false">
-    <div data-role="navbar">
-      <ul>
-        <li><a href="#panggil" data-transition="flip" data-prefetch data-icon="back" class="ui-btn-active ui-state-persist">KEMBALI</a></li>
-      </ul>
-    </div>
-  </div><!-- /footer -->
-</div><!-- /page sedekahrombongan -->
-<div data-role="page" id="pdip">
-
-	<div data-role="header" data-position="fixed" data-tap-toggle="false">
-		<h1><b>PDI-P</b></h1>
-	</div><!-- /header -->
-
-  <div class="jumbotronsr text-center">
-    <!--<h1>Company</h1>
-    <p>We specialize in blablabla</p>-->
-  </div>
-
-	<div data-role="content">
-		<p>Jalan Bubahan PR IH Kelurahan Kranji</p>
-
-    <a href="tel:+62281642999" data-role="button" data-rel="external">HOTLINE</a>
-    <a href="tel:+6282135278780" data-role="button" data-rel="external">PANGGIL 1</a>
-    <a href="tel:+6285640606564" data-role="button" data-rel="external">PANGGIL 2</a>
-		<div data-role="collapsible" data-theme="a" data-content-theme="d">
-			<h3>Fasilitas Ambulan</h3>
-      <ul>
-        <li>Strecher</li>
-        <li>Tabung Oksigen</li>
-        <li>Jenis Mobil APV</li>
-        <li>24 Jam</li>
-        <li>Pasien</li>
-        <li>Area: Purwokerto - Cilacap</li>
-      </ul>
-		</div>
-
-	</div><!-- /content -->
-
-  <div data-role="footer" data-position="fixed" data-tap-toggle="false">
-    <div data-role="navbar">
-      <ul>
-        <li><a href="#panggil" data-transition="flip" data-prefetch data-icon="back" class="ui-btn-active ui-state-persist">KEMBALI</a></li>
-      </ul>
-    </div>
-  </div><!-- /footer -->
-</div><!-- /page pdip -->
-<div data-role="page" id="gerindra">
-
-	<div data-role="header" data-position="fixed" data-tap-toggle="false">
-		<h1><b>GERINDRA</b></h1>
-	</div><!-- /header -->
-
-  <div class="jumbotronsr text-center">
-    <!--<h1>Company</h1>
-    <p>We specialize in blablabla</p>-->
-  </div>
-
-	<div data-role="content">
-		<h1>Gerindra Ambulan</h1>
-		<p>Whatsapp 082136961177</p>
-    <a href="tel:+628128989337" data-role="button" data-rel="external">AMBULAN 1</a>
-    <div data-role="collapsible" data-theme="a" data-content-theme="d">
-			<h3>Fasilitas ambulan 1</h3>
-      <ul>
-        <li>Standby di Jln Pemuda No 6 Purwokerto</li>
-        <li>Strecher dorong(bed)</li>
-        <li>Tandu</li>
-        <li>Tabung Oksigen</li>
-        <li>Jenis Mobil Grandmax 2012</li>
-        <li>24 Jam</li>
-        <li>Khusus Pasien</li>
-        <li>Area: Purwokerto, Cilacap, Banjarnegara, Purbalingga</li>
-      </ul>
-		</div>
-    <a href="tel:+6281327126600" data-role="button" data-rel="external">AMBULAN 2</a>
-		<div data-role="collapsible" data-theme="a" data-content-theme="d">
-			<h3>Fasilitas ambulan 2</h3>
-      <ul>
-        <li>Standby di Sumpiuh</li>
-        <li>Strecher dorong(bed)</li>
-        <li>Tandu</li>
-        <li>Tabung Oksigen</li>
-        <li>Jenis Mobil Grandmax 2012</li>
-        <li>24 Jam</li>
-        <li>Bisa Pasien dan Jenazah</li>
-        <li>Area: Purwokerto, Cilacap, Banjarnegara, Purbalingga</li>
-      </ul>
-		</div>
-    <a href="tel:+6281327149696" data-role="button" data-rel="external">PUSAT LAYANAN</a>
-
-	</div><!-- /content -->
-
-  <div data-role="footer" data-position="fixed" data-tap-toggle="false">
-    <div data-role="navbar">
-      <ul>
-        <li><a href="#panggil" data-transition="flip" data-prefetch data-icon="back" class="ui-btn-active ui-state-persist">KEMBALI</a></li>
-      </ul>
-    </div>
-  </div><!-- /footer -->
-</div><!-- /page gerindra -->
-<div data-role="page" id="dompetdhuafa">
-
-	<div data-role="header" data-position="fixed" data-tap-toggle="false">
-		<h1><b>DOMPET DHUAFA</b></h1>
-	</div><!-- /header -->
-
-  <div class="jumbotronsr text-center">
-    <!--<h1>Company</h1>
-    <p>We specialize in blablabla</p>-->
-  </div>
-
-	<div data-role="content">
-		<p><b>J</b>ln Yayasan No.1, berkoh</p>
-
-    <a href="tel:+62281632543" data-role="button" data-rel="external">CALL CENTER</a>
-    <a href="tel:+6285726322884" data-role="button" data-rel="external">PANGGIL</a>
-		<div data-role="collapsible" data-theme="a" data-content-theme="d">
-			<h3>Fasilitas Ambulan</h3>
-      <ul>
-        <li>antar ibu hamil</li>
-        <li>antar pasien duduk</li>
-        <li>antar operasional logistik kebencanaan</li>
-        <li>Jenis Mobil Grandmax 2012</li>
-        <li>24 Jam</li>
-        <li>Pasien</li>
-        <li>Area: Purwokerto, Cilacap, Banjarnegara, Purbalingga</li>
-      </ul>
-		</div>
-
-	</div><!-- /content -->
-
-  <div data-role="footer" data-position="fixed" data-tap-toggle="false">
-    <div data-role="navbar">
-      <ul>
-        <li><a href="#panggil" data-transition="flip" data-prefetch data-icon="back" class="ui-btn-active ui-state-persist">KEMBALI</a></li>
-      </ul>
-    </div>
-  </div><!-- /footer -->
-</div><!-- /page pdip -->
-<!--hal pangkalan-->
-<div data-role="page" id="pangkalan">
-  <div data-role="header" data-position="fixed" data-tap-toggle="false"><!-- /header -->
-    <!--<a href="https://twitter.com/prianthon" data-role="button" data-icon="grid">follow</a>-->
-    <h1>Cari Si Bulan</h1>
-  </div><!-- /header -->
-
-  <div data-role="content">
-      <h2>Dimana Si Bulan berada sekarang?</h2>
-      <iframe width='100%' height='400px' frameBorder='0' src='https://a.tiles.mapbox.com/v4/prianthon.p3dn8oe0/attribution,zoompan,zoomwheel,geocoder,share.html?access_token=pk.eyJ1IjoicHJpYW50aG9uIiwiYSI6ImNpa2NhdTVuZzBseWh1eW00cjJsdXAzcjAifQ.lBlAT-D3arOkpvYwmgSMdg'></iframe>
-  </div><!-- /content -->
-
-  <div data-role="footer" data-position="fixed" data-tap-toggle="false">
-    <div data-role="navbar">
-      <ul>
-        <li><a href="#panggil" data-transition="flip" data-prefetch data-icon="star">Panggil</a></li>
-        <li><a href="#pangkalan" data-transition="flip" data-prefetch data-icon="search" class="ui-btn-active ui-state-persist">Cari</a></li>
-      </ul>
-    </div>
-  </div>
-</div><!-- /page -->
-<!--hal pangkalan-->
-<script type="text/javascript" src="cordova.js"></script>
-<!--<script type="text/javascript" src="js/index.js"></script>
-<script type="text/javascript">
-    app.initialize();
-</script>-->
-</body>
+    <!--view tengah beranda-->
+    <!-- cordova -->
+    <script type="text/javascript" src="cordova.js"></script>
+    <!-- Path to Framework7 Library JS-->
+    <script type="text/javascript" src="js/framework7.min.js"></script>
+    <!-- Path to your app js-->
+    <script type="text/javascript" src="js/my-app.js"></script>
+    <!-- Swiper JS -->
+    <script src="lib/Swiper/dist/js/swiper.min.js"></script>
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        spaceBetween: 30,
+        effect: 'fade',
+        autoplay: 2500,
+        autoplayDisableOnInteraction: false
+    });
+    </script>
+  </body>
 </html>
